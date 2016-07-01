@@ -32,7 +32,7 @@ p
 a:hover
 	text-decoration: none
 
-a.btn.btn-primary
+a.btn.btn-primary, button
 	background-color: $teal
 	border-radius: 5px
 	border: 0px
@@ -44,7 +44,7 @@ a.btn.btn-primary
 	margin: 0 30px 0 30px
 	font-size: 1.8em
 
-a.btn.btn-primary:hover, a.btn.btn-primary:focus
+a.btn.btn-primary:hover, a.btn.btn-primary:focus, button:hover, button:focus
 	background-color: $gray
 
 .container-fluid
@@ -226,6 +226,58 @@ footer
 	h5
 		margin: 15px
 			
+.contact-page
+	#name, #email, #subject, #message
+		border: 1px solid black
+		// border-radius: 3px
+		background-color: $off-white
+		padding: 5px
+		margin-bottom: 15px
+		font-size: 1.8em
+		-webkit-box-shadow: inset 0px
+		-moz-box-shadow: inset 0px
+		-o-box-shadow: inset 0px
+		-box-shadow: inset 0px
+		width: 100%
+
+	#name, #email, #subject
+		width: 100%
+		height: 40px
+
+	#message
+		width: 100%
+		height: 180px
+
+	button
+		font-size: 2.2em
+		padding-top: 0
+		margin: 0
+		float: right
+		color: white
+
+
+	::-webkit-input-placeholder // webkit, blink, edge 
+		color: $teal
+	
+	::-moz-placeholder  // mozilla firefox 19+
+		color: $teal
+		opacity: 1
+
+	// :-ms-input-placeholder // IE 10-11
+	// 	color: #FF6F69
+
+	footer
+		width: 100%
+		position: absolute
+		left: 0
+		bottom: 0
+
+@media screen and (max-width: 992px)
+	.contact-page
+		footer
+			bottom: -162px
+			height: 162px
+
 
 
 
