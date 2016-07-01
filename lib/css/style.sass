@@ -1,0 +1,209 @@
+$teal: #046380
+$gray: #9B9B9B
+// $dark-gray: #313030
+$off-white: #FAFAFA
+$off-white-border: #E6E6E6
+$font-stack: "Open Sans", sans-serif
+$red: #FF6F69
+
+html
+	position: relative
+	min-height: 100%
+	font-size: 16px // 1em = 16px
+
+body
+	font-family: $font-stack
+	font-size: 62.5%
+	font-weight: 300
+
+h1, h2, h3, h4, h5
+	text-transform: uppercase
+	margin: 0
+
+h1, h2
+	font-size: 3.1em
+
+h5
+	font-size: 1.5em
+
+p 
+	font-size: 2em
+
+a:hover
+	text-decoration: none
+
+a.btn.btn-primary
+	background-color: $teal
+	border-radius: 5px
+	border: 0px
+	vertical-align: center
+	width: 230px
+	height: 50px
+	padding: 12px 0 0 0
+	margin: 0 30px 0 30px
+	font-size: 1.8em
+
+a.btn.btn-primary:hover, a.btn.btn-primary:focus
+	color: $gray
+
+.container-fluid
+	padding: 0
+
+
+.row
+	margin: 0
+
+section
+	padding: 45px 0 45px 0
+
+#top 
+	background-image: url("../../images/birdseye.png")
+	background-size: cover
+	height: 732px
+	background-attachment: fixed
+	margin-top: 0
+	color: white
+
+	h1
+		font-size: 10em
+		margin-top: 230px
+
+	h2
+		font-size: 4em		
+
+.navbar.navbar-static-top, .navbar-brand
+	min-height: 70px
+	max-height: 70px
+	height: 70px
+	margin-bottom: 0
+	background-color: $teal
+
+	* 
+		// border: 1px solid pink
+
+	a
+		font-size: 2em
+		text-transform: uppercase
+		color: white
+		// vertical-align: center
+		min-height: 70px
+		max-height: 70px
+		height: 70px
+		margin-bottom: 0
+		padding: 25px
+
+	a.navbar-brand img
+		height: 50px
+		width: 50px	
+		margin: -15px 0 0 25px
+
+	li > a:focus, li > a:hover
+		color: $teal
+
+#contact, #alt-contact
+	background-color: $off-white
+	border: 1px solid $off-white-border
+
+.home-page
+	#about
+		background-color: $off-white
+		border: 1px solid $off-white-border
+
+	#current-listings
+		.gallery li
+			margin: 0 auto
+			display: inline-block
+			transform: translate(0,0)
+			padding: 20px
+
+			img
+				width: 280px
+				height: 280px
+				background-size: cover
+		
+		.text-content
+			
+			color: white
+			text-shadow: 1px 1px 3px $gray 
+			cursor: pointer
+			display: table
+			height: 280px
+			width: 280px
+			position: absolute
+			left: 20px
+			top: 20px
+
+		.text-content span
+			display: table-cell
+			padding: 20px
+			text-align: left
+			vertical-align: top
+			font-size: 2em
+
+			p:first-child
+				font-size: 1.5em
+
+			p:nth-child(2), p:nth-child(3)
+				font-size: .9em
+		
+		.gallery li .text-content, .gallery li:focus .text-content, .gallery li:active .text-content
+			opacity: 1
+
+	#testimonials
+		background-color: $gray
+		color: white
+
+		p:first-child
+			margin: 15px
+
+		.fa
+			font-size: 7em
+			color: white
+			vertical-align: middle
+			margin-top: 20px
+
+footer
+	background-color: $teal
+	color: white
+	padding: 45px 0 0 0
+
+	a .fa
+		color: white
+		font-size: 4em
+		margin: 0 15px 15px 15px
+
+	a .fa:hover, a .fa:focus
+		color: $gray
+
+	h5 a
+		color: $gray
+
+	h5 a:hover, h5 a:focus
+		color: white
+
+	h5 a img 
+		height: 15px
+		margin: -5px 8px 0 8px
+
+	h5:nth-child(2) // copyright line
+		text-transform: none
+
+	h5:nth-child(2), h5:nth-child(3)
+		margin: 15px
+			
+
+
+
+
+
+
+
+
+
+
+
+* 
+	// border: 1px solid red
+
+
+
