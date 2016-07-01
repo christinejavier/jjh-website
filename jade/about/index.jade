@@ -8,13 +8,13 @@ html(lang='en')
 		link(rel="stylesheet", href="../lib/css/bootstrap.min.css")
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
 		link(rel="stylesheet", href="../lib/css/style.css")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400")
 	body.about-page
 		.navbar.navbar-static-top 
 			.container-fluid
 				.navbar-header
 					a.navbar-brand(href="#")
-						img(src="#")
+						img(src="../images/John-Huang-Logo.png")
 					button.navbar-toggle(type="button", data-toggle="collapse" data-target=".navbar-collapse")
 						span.sr-only Toggle navigation
 						span.icon-bar
@@ -33,13 +33,13 @@ html(lang='en')
 						a(href="../contact/", data-toggle="collapse", data-target=".navbar-collapse.in") Contact
 		main
 			.container-fluid
-				h1.text-center JOHN HUANG
+				h1.text-center John Huang
 				h2.text-center REALTOR, CDPE, BPOR
 				.row
 					.col-xs-12.col-md-offset-1.col-md-3
 						#left-main
-							img(src="../images/John-Huang.png")
-							img(src="../images/Realty-One-Group-Logo.png")
+							img.jh-logo(src="../images/John-Huang.png")
+							img.rog-logo(src="../images/Realty-One-Group-Logo.png")
 							p.text-center License: 01761202
 							p.text-center CalBRE# 01761202
 					.col-xs-12.col-md-offset-1.col-md-6
@@ -49,32 +49,32 @@ html(lang='en')
 							p Best of all, I am a skilled negotiator.  I will not back down for competition.  Many clients have referred their family and friends to me because I have beaten the odds by making impossible deals happen.
 				.row
 					.col-md-offset-2.col-md-8.text-center
-						h2
-							strong Serving Eastvale/Corona and Surrounding Areas:
+						h2.areas Serving Eastvale/Corona and Surrounding Areas:
 						p Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, South Pasadena, Sierra Madre, Monrovia, Alhambra, San Gabriel, Monterey Park, Rosemead, El Monte, South El Monte, Covina, West Covina, Glendora, Azusa, Duarte, Los Angeles	
 		#alt-contact
 			.container-fluid.text-center
 				.row
 					.col-xs-12.col-md-offset-3.col-md-4
-						h3 CONTACT JOHN TODAY
+						h3 Contact John Today
 						p Get in touch to buy or sell a home
 				.row
 					.col-xs-12.col-md-offset-1.col-md-3
-						a(href="#").btn GET IN TOUCH
+						a(href="#").btn.btn-primary Get in touch
 		footer
 			.container-fluid.text-center
 				.row
 					.col-xs-12
-						i.fa.fa-facebook-square(aria-hidden="true")
-						i.fa.fa-linkedin-square(aria-hidden="true")
-					p
-						| &copy; 2016 
-						a(href="#") John Huang. 
-						| All Rights Reserved.
-					p 
-						| Built by
 						a(href="#")
-							img(src="#")
+							i.fa.fa-facebook-square(aria-hidden="true")
+						a(href="#")
+							i.fa.fa-linkedin-square(aria-hidden="true")
+					h5
+						| &copy; 2016 
+						a(href="#") John Huang
+						| . All Rights Reserved.
+					h5 Built by
+						a(href="http://michellehuang.net")
+							img(src="../images/MH-Logo.png")
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
 
 
