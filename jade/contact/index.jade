@@ -11,11 +11,11 @@ html(lang='en')
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400")
 	body.contact-page
 		.navbar.navbar-static-top 
-			.container
+			.container-fluid
 				.navbar-header
 					a.navbar-brand(href="#")
 						img(src="../images/John-Huang-Logo.png")
-					button.navbar-toggle(type="button", data-toggle="collapse" data-target=".navbar-collapse")
+					button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
 						span.sr-only Toggle navigation
 						span.icon-bar
 						span.icon-bar
@@ -48,7 +48,7 @@ html(lang='en')
 							br
 							| Email: john4reo@gmail.com
 					form#contact-form(action="https://formspree.io/huangmhuang@gmail.com", method="POST")
-					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-5
+					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-5
 						.field
 							input#name(type="text", name="name", placeholder="Name" required)
 						.field
