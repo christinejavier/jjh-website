@@ -8,13 +8,13 @@ html(lang='en')
 		link(rel="stylesheet", href="../lib/css/bootstrap.min.css")
 		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
 		link(rel="stylesheet", href="../lib/css/style.css")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,600")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400")
 	body.contact-page
 		.navbar.navbar-static-top 
-			.container-fluid
+			.container
 				.navbar-header
 					a.navbar-brand(href="#")
-						img(src="#")
+						img(src="images/John-Huang-Logo.png")
 					button.navbar-toggle(type="button", data-toggle="collapse" data-target=".navbar-collapse")
 						span.sr-only Toggle navigation
 						span.icon-bar
@@ -63,14 +63,15 @@ html(lang='en')
 			.container-fluid.text-center
 				.row
 					.col-xs-12
-						i.fa.fa-facebook-square(aria-hidden="true")
-						i.fa.fa-linkedin-square(aria-hidden="true")
-					p
-						| &copy; 2016 
-						a(href="#") John Huang. 
-						| All Rights Reserved.
-					p 
-						| Built by
 						a(href="#")
-							img(src="#")
+							i.fa.fa-facebook-square(aria-hidden="true")
+						a(href="#")
+							i.fa.fa-linkedin-square(aria-hidden="true")
+					h5
+						| &copy; 2016 
+						a(href="#") John Huang
+						| . All Rights Reserved.
+					h5 Built by
+						a(href="http://michellehuang.net")
+							img(src="../images/MH-Logo.png")
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
