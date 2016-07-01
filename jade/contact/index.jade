@@ -14,7 +14,7 @@ html(lang='en')
 			.container
 				.navbar-header
 					a.navbar-brand(href="#")
-						img(src="images/John-Huang-Logo.png")
+						img(src="../images/John-Huang-Logo.png")
 					button.navbar-toggle(type="button", data-toggle="collapse" data-target=".navbar-collapse")
 						span.sr-only Toggle navigation
 						span.icon-bar
@@ -33,9 +33,9 @@ html(lang='en')
 						a(href="../contact/", data-toggle="collapse", data-target=".navbar-collapse.in") Contact
 		main
 			.container-fluid
-				h1 Contact
+				h1.text-center Contact
 				.row
-					.col-xs-12.col-md-offset-1.col-md-5
+					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-5
 						p If you would like to talk about a property or have a question, feel free to get in touch. Fill out the contact form and we’ll get right back to you.
 						p Whether you’re looking to buy, sell, or would like more information about the area, please contact us.
 						p 
@@ -48,7 +48,7 @@ html(lang='en')
 							br
 							| Email: john4reo@gmail.com
 					form#contact-form(action="https://formspree.io/huangmhuang@gmail.com", method="POST")
-					.col-xs-12.col-md-offset-1.col-md-5
+					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-5
 						.field
 							input#name(type="text", name="name", placeholder="Name" required)
 						.field
@@ -58,7 +58,7 @@ html(lang='en')
 						.field
 							textarea#message(name="message", placeholder="Your Message" required)
 						.field
-							button(type="submit") Send
+							button(type="submit") Send	
 		footer
 			.container-fluid.text-center
 				.row
