@@ -36,6 +36,7 @@ a.btn.btn-primary
 	background-color: $teal
 	border-radius: 5px
 	border: 0px
+	text-transform: uppercase
 	vertical-align: center
 	width: 230px
 	height: 50px
@@ -44,11 +45,10 @@ a.btn.btn-primary
 	font-size: 1.8em
 
 a.btn.btn-primary:hover, a.btn.btn-primary:focus
-	color: $gray
+	background-color: $gray
 
 .container-fluid
 	padding: 0
-
 
 .row
 	margin: 0
@@ -99,10 +99,17 @@ section
 
 	li > a:focus, li > a:hover
 		color: $teal
+		background-color: white
+
+.rog-logo
+	width: 290px
 
 #contact, #alt-contact
 	background-color: $off-white
 	border: 1px solid $off-white-border
+
+#alt-contact
+	padding: 20px
 
 .home-page
 	#about
@@ -161,6 +168,32 @@ section
 			color: white
 			vertical-align: middle
 			margin-top: 20px
+main
+	padding: 50px
+
+	h1
+		padding-bottom: 50px
+
+.about-page
+	main
+		h1
+			padding-bottom: 5px
+
+		h2
+			padding-bottom: 50px
+			font-size: 2.5em
+
+		.areas
+			padding: 50px 0 5px 0
+			text-transform: none
+			font-weight: 400
+
+
+
+
+
+
+
 
 footer
 	background-color: $teal
@@ -188,7 +221,7 @@ footer
 	h5:nth-child(2) // copyright line
 		text-transform: none
 
-	h5:nth-child(2), h5:nth-child(3)
+	h5
 		margin: 15px
 			
 
