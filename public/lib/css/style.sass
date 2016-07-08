@@ -1,0 +1,410 @@
+$teal: #046380
+$gray: #9B9B9B
+// $dark-gray: #313030
+$off-white: #FAFAFA
+$off-white-border: #E6E6E6
+$font-stack: "Open Sans", sans-serif
+$red: #FF6F69
+
+html
+	position: relative
+	min-height: 100%
+	font-size: 16px // 1em = 16px
+
+body
+	font-family: $font-stack
+	font-size: 62.5%
+	font-weight: 300
+
+h1, h2, h3, h4, h5
+	text-transform: uppercase
+	margin: 0
+
+h1, h2
+	font-size: 3.1em
+
+h3
+	font-size: 2.4em	
+
+h5
+	font-size: 1.4em
+
+p 
+	font-size: 2em
+
+a:hover
+	text-decoration: none
+
+a.btn.btn-primary
+	background-color: $teal
+	border-radius: 5px
+	border: 0px
+	text-transform: uppercase
+	vertical-align: center
+	width: 230px
+	height: 50px
+	padding: 12px 0 0 0
+	margin: 0 30px 0 30px
+	font-size: 1.8em
+
+a.btn.btn-primary:hover, a.btn.btn-primary:focus
+	background-color: $gray
+
+.container-fluid
+	padding: 0
+
+.row
+	margin: 0
+
+section, main
+	padding: 45px 0
+
+.navbar.navbar-static-top, .navbar-brand
+	min-height: 70px
+	max-height: 70px
+	height: 70px
+	margin-bottom: 0
+	background-color: $teal
+
+	.navbar-header
+		margin: 0
+	* 
+		// border: 1px solid pink
+
+	.navbar-brand
+		padding: 25px
+
+	a.navbar-brand img
+		height: 50px
+		width: 50px	
+		margin: -15px 0 0 0
+	
+	a
+		font-size: 2em
+		text-transform: uppercase
+		color: white
+		// vertical-align: center
+		min-height: 70px
+		max-height: 70px
+		height: 70px
+		margin-bottom: 0
+		padding: 25px 18px
+
+	.navbar-toggle
+		border-radius: 0
+		margin: 0
+		padding: 27px
+
+	.navbar-toggle:hover, .navbar-toggle:focus
+		background-color: $gray
+
+	.navbar-toggle .icon-bar
+		background-color: white
+
+	.nav
+		li > a
+			color: white
+			background-color: $teal
+
+		li > a:focus, li > a:hover
+			color: $teal
+			background-color: white
+
+#contact, #alt-contact
+	background-color: $off-white
+	border: 1px solid $off-white-border
+
+#alt-contact
+	padding: 20px
+
+	p
+		margin-bottom: 0
+		font-size: 1.8em
+
+section
+	h2
+		padding-bottom: 50px
+
+.bx-wrapper
+	border: 0px
+	background-color: $gray
+	box-shadow: 0 0 0
+
+
+.home-page
+	header
+		background-image: url("../../images/birdseye.png")
+		background-size: cover
+		height: 100vh
+		background-attachment: fixed
+		margin-top: 0
+		color: white
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		position: relative
+		top: -70px
+		h1
+			font-size: 10em
+		// 	margin-top: 230px
+
+		h2
+			font-size: 4em	
+
+	#about
+		background-color: $off-white
+		border: 1px solid $off-white-border
+
+	#current-listings
+		.gallery li
+			margin: 0 auto
+			display: inline-block
+			transform: translate(0,0)
+			padding: 20px
+
+			img
+				width: 280px
+				height: 280px
+				background-size: cover
+		
+		.text-content
+			
+			color: white
+			text-shadow: 1px 1px 3px $gray 
+			cursor: pointer
+			display: table
+			height: 280px
+			width: 280px
+			position: absolute
+			left: 20px
+			top: 20px
+
+		.text-content span
+			display: table-cell
+			padding: 20px
+			text-align: left
+			vertical-align: top
+			font-size: 2em
+
+			p:first-child
+				font-size: 1.5em
+
+			p:nth-child(2), p:nth-child(3)
+				font-size: 0.9em
+		
+		.gallery li .text-content, .gallery li:focus .text-content, .gallery li:active .text-content
+			opacity: 1
+
+	#testimonials
+		background-color: $gray
+		color: white
+		padding: 45px 0 0 0
+
+		h2
+			padding-bottom: 20px
+		p:first-child
+			margin: 15px
+
+		.fa
+			font-size: 4em
+			color: white
+			padding: 0 25px
+		
+		li:nth-child(2)
+			font-size: 0.8em
+			padding: -40px 0 0 0
+
+	#contact
+		h2
+			padding-bottom: 0
+
+.about-page
+	main
+		h1
+			padding-bottom: 5px
+
+		h2
+			padding-bottom: 50px
+			font-size: 2.3em
+
+		#left-main
+			padding-bottom: 20px
+
+		.jh-image
+			width: 350px
+			margin: 0 auto
+
+		.rog-logo
+			width: 350px
+			margin: 0 auto
+
+		.areas
+			padding: 30px 0 5px 0
+			text-transform: none
+			font-weight: 400	
+
+main
+	h1
+		padding-bottom: 50px
+
+.sellers-page
+	main
+		h1
+			margin-bottom: -40px
+		.fa
+			font-size: 13em
+			padding: 40px 0 20px 0
+
+footer
+	background-color: $teal
+	color: white
+	padding: 45px 0 0 0
+
+	a .fa
+		color: white
+		font-size: 4em
+		margin: 0 15px 15px 15px
+
+	a .fa:hover, a .fa:focus
+		color: $gray
+
+	h5 a
+		color: $gray
+
+	h5 a:hover, h5 a:focus
+		color: white
+
+	h5 a img 
+		height: 15px
+		margin: -5px 8px 0 8px
+
+	h5:nth-child(2) // copyright line
+		text-transform: none
+
+	h5
+		margin: 15px
+			
+.contact-page
+	#name, #email, #subject, #message
+		border: 1px solid black
+		// border-radius: 3px
+		background-color: $off-white
+		padding: 5px
+		margin-bottom: 15px
+		font-size: 1.8em
+		-webkit-box-shadow: inset 0px
+		-moz-box-shadow: inset 0px
+		-o-box-shadow: inset 0px
+		-box-shadow: inset 0px
+		width: 100%
+
+	#name, #email, #subject
+		width: 100%
+		height: 40px
+
+	#message
+		width: 100%
+		height: 180px
+
+	.field
+		button
+			border-radius: 5px
+			border: 0px
+			text-transform: uppercase
+			vertical-align: center
+			width: 230px
+			height: 50px
+			background-color: $teal
+			font-size: 2.2em
+			padding-top: 0
+			margin: 0
+			float: right
+			color: white
+
+	button:hover, button:focus
+		background-color: $gray
+
+	::-webkit-input-placeholder // webkit, blink, edge 
+		color: $teal
+	
+	::-moz-placeholder  // mozilla firefox 19+
+		color: $teal
+		opacity: 1
+
+	// :-ms-input-placeholder // IE 10-11
+	// 	color: #FF6F69
+
+	footer
+		width: 100%
+		position: absolute
+		left: 0
+		bottom: 0
+		height: 162px
+
+@media screen and (max-width: 991px)
+	a.btn.btn-primary
+		margin: 10px
+
+	.contact-page
+		footer
+			bottom: -162px
+			height: 162px
+
+@media screen and (max-width: 768px)
+	p
+		font-size: 1.8em
+
+	section
+		h2 
+			padding: 25px 0
+			padding-bottom: 25px
+
+	main
+		h1
+			padding: 25px 0
+			padding-bottom: 25px
+
+	a.btn.btn-primary
+		margin: 10px
+
+	.home-page
+		header
+			// height: 420px
+			padding: 0
+			text-align: right
+
+			h1
+				font-size: 7em
+				// margin-top: 100px
+				
+			h2
+				// font-size: 3em
+
+	.about-page
+		main
+			h2
+				padding-bottom: 25px
+
+	.sellers-page
+		main
+			h1
+				margin-bottom: -25px
+
+
+
+
+
+
+
+
+
+
+
+
+
+* 
+	// border: 1px solid red
+
+
+
