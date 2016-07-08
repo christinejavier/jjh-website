@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title John Huang | Southern California Real Estate Agent
+		link(rel="stylesheet", href="../lib/css/bootstrap.min.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css")
+		link(rel="stylesheet", href="../lib/css/style.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:300,400")
+	body.search-page
+		.navbar.navbar-static-top 
+			.container-fluid
+				.navbar-header
+					a.navbar-brand(href="#")
+						img(src="../images/John-Huang-Logo.png")
+					button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+				ul.nav.navbar-nav.navbar-right.collapse.navbar-collapse
+					li
+						a(href="../about/", data-toggle="collapse", data-target=".navbar-collapse.in") About
+					li
+						a(href="../listings/", data-toggle="collapse", data-target=".navbar-collapse.in") Listings
+					li
+						a(href="../search-homes/", data-toggle="collapse", data-target=".navbar-collapse.in") Search Homes
+					li
+						a(href="../sellers/", data-toggle="collapse", data-target=".navbar-collapse.in") Sellers
+					li
+						a(href="../contact/", data-toggle="collapse", data-target=".navbar-collapse.in") contact
+		main.search-homes
+			.container-fluid.text-center
+				h1 Search Homes
+				.row
+					.col-xs-12.col-md-offset-1.col-md-10
+						iframe(src="http://mrmlsmatrix.com/Matrix/public/IDX.aspx?idx=e0431445", width="100%", height="600px", frameborder="0", marginwidth="0", marginheight="0")
+		#alt-contact
+			.container-fluid.text-center
+				.row
+					.col-xs-12.col-md-offset-3.col-md-3.text-center
+						h3 Contact John Today
+						p Get in touch to buy or sell a home
+					.col-xs-12.col-md-3
+						a(href="#").btn.btn-primary Get in touch
+		footer
+			.container-fluid.text-center
+				.row
+					.col-xs-12
+						a(href="#")
+							i.fa.fa-facebook-square(aria-hidden="true")
+						a(href="#")
+							i.fa.fa-linkedin-square(aria-hidden="true")
+					h5
+						| &copy; 2016 
+						a(href="#") John Huang
+						| . All Rights Reserved.
+					h5 Built by
+						a(href="http://michellehuang.net")
+							img(src="../images/MH-Logo.png")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script(src="../lib/js/bootstrap.min.js")
