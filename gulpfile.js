@@ -145,7 +145,7 @@ gulp.task("watch", function(){
 	gulp.watch(JADE_PATH, ["jade"]);
 });
 
-gulp.task("default", ["watch"], function(){
+gulp.task("default", ["jade", "js", "styles", "server", "watch"], function(){
 	console.log("starting default task");
 });
 
