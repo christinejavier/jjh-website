@@ -3,6 +3,8 @@ build/
 
 node_modules/
 package.json/
+src/images/
+package.json
 src/css/boot*.css
 src/css/boot*.css.map
 src/css/jquery*.css
