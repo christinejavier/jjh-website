@@ -1,14 +1,14 @@
 doctype html
 html(lang="en")
-	title John Huang | Southern California Real Estate Agent
+	title John Huang - Southern California Real Estate Agent
 	meta(name="description", content="Find your perfect home with John Huang in Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, and the rest of San Gabriel Valley.")
-	meta(property="og:title", content="John Huang | Southern California Real Estate Agent")
+	meta(property="og:title", content="John Huang - Southern California Real Estate Agent")
 	meta(property="og:description", content="Find your perfect home with John Huang in Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, and the rest of San Gabriel Valley.")
 	meta(property="og:url", content="#")
 	meta(property="og:image", content="#")
 	include ../includes/head
 	body.home-page
-		include ../includes/navbar		
+		include ../includes/navbar
 		header
 			.container-fluid.text-center
 				.row
@@ -27,8 +27,8 @@ html(lang="en")
 					include ../includes/newest
 				.row
 					.col-xs-12.text-center
-						a(href="#").btn.btn-primary View More Listings
-						a(href="#").btn.btn-primary MLS Search
+						a(href="/listings").btn.btn-primary View More Listings
+						a(href="/search-homes").btn.btn-primary MLS Search
 		section#testimonials
 			.container-fluid.text-center
 				h2 Testimonials
@@ -70,8 +70,8 @@ html(lang="en")
 					p Get in touch to buy or sell a home
 				.row
 					.col-xs-12
-						a(href="#").btn.btn-primary (626)-629-6699
-						a(href="#").btn.btn-primary Email Me
+						a(href="tel:6266296699").btn.btn-primary (626)-629-6699
+						a(href="/contact").btn.btn-primary Email Me
 		include ../includes/footer
 		include ../includes/scripts
 
