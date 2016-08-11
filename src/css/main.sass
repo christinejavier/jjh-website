@@ -30,11 +30,11 @@ h1, h2
 h3
 	font-size: 2.4em	
 
-h5
-	font-size: 1.4em
-
 p, td, th
 	font-size: 2em
+
+.small-text, .copyright
+	font-size: 1.4em
 
 a:hover
 	text-decoration: none
@@ -125,7 +125,7 @@ section, main
 .bx-wrapper
 	border: 0px
 	background-color: $gray
-	box-shadow: 0 0 0
+	box-shadow: none
 
 .gallery 
 	li
@@ -288,32 +288,25 @@ footer
 	a .fa:hover, a .fa:focus
 		color: $gray
 
-	h5 a
+	p a
 		color: $gray
 
-	h5 a:hover, h5 a:focus
+	p a:hover, h5 a:focus
 		color: white
 
-	h5 a img 
-		height: 15px
-		margin: -5px 8px 0 8px
+	p a img 
+		height: 13px
+		margin: -3px 8px 0 8px
 
-	h5:nth-child(2) // copyright line
+	p:nth-child(2) // copyright line
 		text-transform: none
 
-	h5
-		margin: 15px
+	// p
+	// 	margin: 15px
 			
 .contact-page
-	display: flex //sticky footer for flexbox
-	min-height: 100vh
-	flex-direction: column
-	margin-top: 0
-
 	main
-		padding-bottom: 27px
-		flex: 1
-		padding: 115px 0 20px 0 // top: 45px + 70px navbar height
+		// padding-bottom: 27px
 
 	#name, #email, #subject, #message
 		border: 1px solid black
@@ -363,14 +356,19 @@ footer
 	::-ms-input-placeholder 
 		color: #FF6F69
 
+.contact-page, .pnf-page
+	display: flex //sticky footer for flexbox
+	min-height: 100vh
+	flex-direction: column
+	margin-top: 0
+
+	main
+		flex: 1
+		padding: 115px 0 20px 0 // top: 45px + 70px navbar height
+
 @media screen and (max-width: 991px)
 	a.btn.btn-primary
 		margin: 10px
-
-	.contact-page
-		footer
-			bottom: -162px
-			height: 162px
 
 @media screen and (max-width: 768px)
 	body
@@ -416,7 +414,7 @@ footer
 			h1
 				margin-bottom: -25px
 
-	.contact-page
+	.contact-page, .pnf-page
 		main
 			padding: 80px 0 20px 0 // top: 45px + 35px (half navbar height)
 
