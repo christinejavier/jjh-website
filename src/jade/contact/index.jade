@@ -22,19 +22,23 @@ html(lang='en')
 							| Corona, CA 92879
 						
 						p 
-							| Phone: 626-629-6699
+							| Phone: 
+							a(href="tel:16266296699") (626)-629-6699
 							br
-							| Email: john4reo@gmail.com
+							| Email: 
+							a(href="mailto:john4reo@gmail.com") john4reo@gmail.com
 					form#contact-form(action="https://formspree.io/john4reo@gmail.com", method="POST")
+						//- add site url to value when publish
+						input(type="hidden", name="_next", id="name", value="#")
 					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-5
 						.field
-							input#name(type="text", name="name", placeholder="Name" required)
+							input#name(type="text", name="name", placeholder="Name*" required)
 						.field
-							input#email(type="email", name="_replyto", placeholder="Email" required)
+							input#email(type="email", name="_replyto", placeholder="Email*" required)
 						.field
 							input#subject(type="subject", name="_subject", placeholder="Subject")
 						.field
-							textarea#message(name="message", placeholder="Your Message" required)
+							textarea#message(name="message", placeholder="Your Message*" required)
 						.field
 							button(type="submit") Send	
 		include ../../includes/footer
