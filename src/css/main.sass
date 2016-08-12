@@ -7,10 +7,10 @@ $font-stack: "Open Sans", sans-serif
 $red: #FF6F69
 
 html
-	position: relative
-	height: 100%
-	min-height: 100%
-	max-height: 100%
+	// position: relative
+	// height: 100%
+	// min-height: 100%
+	// max-height: 100%
 	font-size: 16px // 1em = 16px
 	// margin-top: 70px
 
@@ -18,7 +18,11 @@ body
 	font-family: $font-stack
 	font-size: 62.5%
 	font-weight: 300
-	margin-top: 70px
+	// margin-top: 70px
+	padding-top: 70px
+	display: flex //sticky footer for flexbox
+	min-height: 100vh
+	flex-direction: column
 
 h1, h2, h3, h4, h5
 	text-transform: uppercase
@@ -36,8 +40,12 @@ p, td, th
 .small-text, .copyright
 	font-size: 1.4em
 
+a
+	color: $teal
+
 a:hover
 	text-decoration: none
+	color: $gray
 
 a.btn.btn-primary
 	background-color: $teal
@@ -51,7 +59,8 @@ a.btn.btn-primary
 	margin: 0 30px 0 30px
 	font-size: 1.8em
 
-a.btn.btn-primary:hover, a.btn.btn-primary:focus
+a.btn.btn-primary:hover, a.btn.btn-primary:focus, button:hover, button:focus
+	outline: none
 	background-color: $gray
 
 .container-fluid
@@ -89,7 +98,7 @@ section, main
 		max-height: 70px
 		height: 70px
 		margin-bottom: 0
-		padding: 25px 18px
+		padding: 25px
 
 	.navbar-toggle
 		border-radius: 0
@@ -102,7 +111,7 @@ section, main
 	.navbar-toggle .icon-bar
 		background-color: white
 
-	.nav
+	ul
 		li > a
 			color: white
 			background-color: $teal
@@ -188,7 +197,7 @@ section, main
 		h2
 			font-size: 4.4em
 			font-weight: 300
-			padding-top: 10px
+			padding: 10px 0 20px
 			text-transform: capitalize
 
 	#about
@@ -285,13 +294,13 @@ footer
 		font-size: 4em
 		margin: 0 15px 15px 15px
 
-	a .fa:hover, a .fa:focus
+	a .fa:hover
 		color: $gray
 
 	p a
 		color: $gray
 
-	p a:hover, h5 a:focus
+	p a:hover, p a:focus
 		color: white
 
 	p a img 
@@ -300,13 +309,8 @@ footer
 
 	p:nth-child(2) // copyright line
 		text-transform: none
-
-	// p
-	// 	margin: 15px
 			
 .contact-page
-	main
-		// padding-bottom: 27px
 
 	#name, #email, #subject, #message
 		border: 1px solid black
@@ -320,13 +324,17 @@ footer
 		-box-shadow: inset 0px
 		width: 100%
 
+	#name:focus, #email:focus, #subject:focus, #message:focus
+		outline: none
+		border: 2px solid $teal
+
 	#name, #email, #subject
 		width: 100%
 		height: 40px
 
 	#message
 		width: 100%
-		height: 180px
+		height: 180px	
 
 	.field
 		button
@@ -343,28 +351,29 @@ footer
 			float: right
 			color: white
 
-	button:hover, button:focus
-		background-color: $gray
+		button:hover, button:focus //global style isn't specific enough
+			outline: none
+			background-color: $gray
 
-	::-webkit-input-placeholder 
-		color: $teal
+	::placeholder
+		color: $gray
+		opacity: .6
+
+	// ::-webkit-input-placeholder 
+	// 	color: $teal
+	// 	opacity: .6
 	
-	::-moz-placeholder
-		color: $teal
-		opacity: 1
+	// ::-moz-placeholder
+	// 	color: $teal
+	// 	opacity: 1
 
-	::-ms-input-placeholder 
-		color: #FF6F69
+	// ::-ms-input-placeholder 
+	// 	color: #FF6F69	
 
-.contact-page, .pnf-page
-	display: flex //sticky footer for flexbox
-	min-height: 100vh
-	flex-direction: column
-	margin-top: 0
-
+.contact-page, .pnf-page, .thank-you-page
 	main
 		flex: 1
-		padding: 115px 0 20px 0 // top: 45px + 70px navbar height
+		padding: 45px 0 20px 0 // top: 45px + 70px navbar height
 
 @media screen and (max-width: 991px)
 	a.btn.btn-primary
@@ -394,15 +403,12 @@ footer
 		margin: 10px
 
 	.home-page
-		header
-			// padding: 0
-
-			h1
-				font-size: 7em
-				text-align: right
-			h2
-				font-size: 3em
-				text-align: right
+		h1
+			font-size: 7em
+			text-align: right
+		h2
+			font-size: 3em
+			text-align: right
 
 	.about-page
 		main
@@ -417,5 +423,3 @@ footer
 	.contact-page, .pnf-page
 		main
 			padding: 80px 0 20px 0 // top: 45px + 35px (half navbar height)
-
-
