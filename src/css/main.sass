@@ -28,11 +28,16 @@ h1, h2, h3, h4, h5
 	text-transform: uppercase
 	margin: 0
 
-h1, h2
-	font-size: 3.1em
+h1
+	font-size: 3.5em
+	padding-bottom: 5px
+
+h2
+	font-size: 2.5em
+	padding-bottom: 0
 
 h3
-	font-size: 2.4em	
+	font-size: 2.4em
 
 p, td, th
 	font-size: 2em
@@ -43,8 +48,9 @@ p, td, th
 a
 	color: $teal
 
-a:hover
+a:hover, a:focus
 	text-decoration: none
+	// outline: none
 	color: $gray
 
 a.btn.btn-primary
@@ -57,7 +63,8 @@ a.btn.btn-primary
 	height: 50px
 	padding: 12px 0 0 0
 	margin: 0 30px 0 30px
-	font-size: 1.8em
+	font-size: 2em //prev 1.8em
+	font-weight: 300
 
 a.btn.btn-primary:hover, a.btn.btn-primary:focus, button:hover, button:focus
 	outline: none
@@ -72,6 +79,19 @@ a.btn.btn-primary:hover, a.btn.btn-primary:focus, button:hover, button:focus
 section, main
 	padding: 45px 0
 
+.sm-bot-pad
+	padding-bottom: 5px
+
+.end-head
+	padding-bottom: 50px
+
+.social-icons
+	margin-bottom: 15px
+	
+	a
+		margin-left: 15px
+		margin-right: 15px
+
 .navbar.navbar-fixed-top, .navbar-brand
 	min-height: 70px
 	max-height: 70px
@@ -79,18 +99,15 @@ section, main
 	margin-bottom: 0
 	background-color: $teal
 
-	.navbar-header
+	.navbar-header, .navbar-brand
 		margin: 0
-
-	.navbar-brand
-		padding: 25px
 
 	a.navbar-brand img
 		height: 50px
 		width: 50px	
 		margin: -15px 0 0 0
 	
-	a
+	a //nav links
 		font-size: 2em
 		text-transform: uppercase
 		color: white
@@ -98,7 +115,7 @@ section, main
 		max-height: 70px
 		height: 70px
 		margin-bottom: 0
-		padding: 25px
+		padding: 25px 20px // max padding left right is 24, or will not overflow
 
 	.navbar-toggle
 		border-radius: 0
@@ -116,7 +133,7 @@ section, main
 			color: white
 			background-color: $teal
 
-		li > a:focus, li > a:hover
+		li > a:hover, li > a:focus
 			color: $teal
 			background-color: white
 
@@ -135,6 +152,9 @@ section, main
 	border: 0px
 	background-color: $gray
 	box-shadow: none
+
+	.bx-controls-direction a //next buttons
+		z-index: 1000 //so it doesn't go in front of navbar
 
 .gallery 
 	li
@@ -179,6 +199,9 @@ section, main
 			opacity: 1
 
 .home-page
+	h2
+		font-size: 3.1em //same size as h1's on all other pages
+
 	header
 		background-image: url("../../images/birdseye.jpg")
 		background-size: cover
@@ -193,16 +216,21 @@ section, main
 
 		h1
 			font-size: 10em
+			padding-bottom: 0
 
 		h2
 			font-size: 4.4em
 			font-weight: 300
 			padding: 10px 0 20px
-			text-transform: capitalize
+			text-transform: capitalize //normal caps
 
 	#about
 		background-color: $off-white
-		border: 1px solid $off-white-border		
+		border: 1px solid $off-white-border
+
+	#current-listings, #testimonials
+		h2
+			padding-bottom: 0
 
 	#testimonials
 		background-color: $gray
@@ -210,7 +238,8 @@ section, main
 		padding: 45px 0 0 0
 
 		h2
-			padding-bottom: 20px
+			// padding-bottom: 20px
+
 		p:first-child
 			margin: 15px
 
@@ -225,16 +254,18 @@ section, main
 
 	#contact
 		h2
-			padding-bottom: 0
+			// padding-bottom: 0
 
 .about-page
 	main
 		h1
-			padding-bottom: 5px
+			// padding-bottom: 5px
 
-		h2
-			padding-bottom: 50px
-			font-size: 2.3em
+		h2:nth-child(2)
+			// padding-bottom: 50px //only first h2 (e.g. subheading)
+		
+		// h2
+		// 	font-size: 2.3em //for all h2s on page
 
 		#left-main
 			padding-bottom: 20px
@@ -248,41 +279,48 @@ section, main
 			margin: 0 auto
 
 		.areas
-			padding: 30px 0 5px 0
+			// padding: 30px 0 5px 0
 			text-transform: none
-			font-weight: 400	
+			// font-weight: 400	already standard
 
 main
 	h1
-		padding-bottom: 50px
+		// padding-bottom: 50px
 
 .listings-page
+	h1
+		margin-bottom: -20px //counteract padding of gallery
 
 .single-listings-page
 	main
-		h1
-			padding-bottom: 5px
-
-		h2
-			padding-bottom: 50px
-			font-size: 2.3em
 		img
 			padding-bottom: 50px
-	table
-		background-color: $off-white
-		margin-top: 30px
-	td, th
-		width: 280px
-		padding: 5px
-		border: 1px
+		.specs 
+			margin-top: 30px
+			h2
+				text-transform: none
+
+			li
+				font-size: 2em
+
+	// table
+	// 	background-color: $off-white
+	// 	margin-top: 30px
+	// td, th
+	// 	width: 280px
+	// 	padding: 5px
+	// 	border: 1px
 
 .sellers-page
 	main
 		h1
-			margin-bottom: -40px
-		.fa
-			font-size: 13em
-			padding: 40px 0 20px 0
+			// margin-bottom: -40px idk why i had this
+		.sellers-tips
+			padding-bottom: 20px
+			.fa
+				font-size: 13em
+				// padding: 20px 0
+				padding: 0px 0px 20px
 
 footer
 	background-color: $teal
@@ -292,9 +330,8 @@ footer
 	a .fa
 		color: white
 		font-size: 4em
-		margin: 0 15px 15px 15px
 
-	a .fa:hover
+	a .fa:hover, a .fa:focus
 		color: $gray
 
 	p a
@@ -357,7 +394,7 @@ footer
 
 	::placeholder
 		color: $gray
-		opacity: .6
+		opacity: 0.8
 
 	// ::-webkit-input-placeholder 
 	// 	color: $teal
@@ -379,47 +416,51 @@ footer
 	a.btn.btn-primary
 		margin: 10px
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 	body
-		margin-top: 35px
+		// margin-top: 35px
 
 	.home-page
-		margin-top: 70px //keeps header centered
+		// margin-top: 70px // looks right on devtools responsive testing, but not on iphone 5
+		margin-top: 10px
 
-	p
+		header	
+			h1
+				font-size: 7em
+				text-align: right
+
+			h2
+				font-size: 3em
+				text-align: right
+				padding: 0
+
+	p, td, th
 		font-size: 1.8em
 
+	.end-head
+		padding-bottom: 25px
+
 	section
-		h2 
-			padding: 25px 0
-			padding-bottom: 25px
+		padding: 25px 0
+		h2 // home page all h2's for sections
+			// padding: 25px 0
 
 	main
-		h1
-			padding: 25px 0
-			padding-bottom: 25px
-
-	a.btn.btn-primary
-		margin: 10px
-
-	.home-page
-		h1
-			font-size: 7em
-			text-align: right
-		h2
-			font-size: 3em
-			text-align: right
-
-	.about-page
-		main
-			h2
-				padding-bottom: 25px
+		padding: 25px 0
+		h1 // other pages all h1's
 
 	.sellers-page
 		main
 			h1
-				margin-bottom: -25px
+				// margin-bottom: -25px idk what this is too
 
 	.contact-page, .pnf-page
 		main
-			padding: 80px 0 20px 0 // top: 45px + 35px (half navbar height)
+			padding: 25px 0 20px 0 // top: 25px + 35px (half navbar height)
+
+	.single-listings-page
+		.specs 
+			text-align: center //only center for small screen
+
+			li
+				font-size: 1.8em
