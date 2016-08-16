@@ -12,51 +12,80 @@ html(lang='en')
 		main
 			.container-fluid
 				h1.text-center 2074 Vista Ave.
-				h2.text-center Arcadia, CA 91006
+				h2.text-center.end-head Arcadia, CA 91006
 				.row
 					.col-xs-12.col-md-5
-						img.img-responsive.center-block(src="/images/2074-Vista.jpg", alt="2074 Vista Ave Arcadia Real Estate Kitchen and Dining View")
+						img.img-responsive.center-block(src="/images/2074-Vista.jpg", alt="Image of 2074 Vista Ave Arcadia Real Estate, Kitchen and Dining View")
 					.col-xs-12.col-md-6
 						p Rare opportunity to own a home in the Highlands of Arcadia with a view overlooking the valley! Recently fully renovated, everything you can see and touch in this 3 bedroom 3 bath home is brand new waiting for a lucky someone to call it home. Featuring a single level open floor plan, the great room allows for maximum customization while overlooking a one of a kind view of the valley below at all times. Bright and open concept reign supreme as a modern kitchen, restrooms and new flooring finish off the interior of this home. Outside you are greeted with a concrete covered patio leading to your recently refinished private pool overlooking the panoramic view as well. Leased solar panels offer cheaper renewable energy for you and your loved ones. Located near the end of a quiet cul-de-sac, privacy and safety abundant to those who seek it. Too much to explain here, must be seen to be appreciated!
-				.row
-					.col-xs-12.col-md-offset-2.col-md-8
-						table
-							tr
-								th Beds
-								td 3
-								th Garage Size
-								td
-							tr
-								th Baths
-								td 3
-								th Property Type
-								td House
-							tr
-								th Square Feet
-								td 2,154
-								th Year Built
-								td
-							tr
-								th Lot Size
-								td
-								th Taxes
-								td
-							tr
-								th Price
-								td $1,588,000
-								th MLS #
-								td
-							tr
-								th Price/SqFt
-								td 
-								th External Link
-								td 
-							tr
-								th View on Zillow
-								td
-							tr
-								th View on Trulia
-								td 
+				.specs
+					h2.text-center.sm-bot-pad Specifics
+					.row
+						//- .col-xs-offset-2.col-xs-8.col-sm-offset-3.col-sm-3
+						//- .col-xs-12.col-sm-offset-2.col-sm-3.col-lg-offset-3.col-lg-3
+						.col-xs-12.col-sm-offset-3.col-sm-3
+							mixin specs(type, amt)
+								li
+									strong= type
+									span= ": " + amt
+							ul.list-unstyled
+								mixin specs("Bed", 3)
+								mixin specs("Baths", 3)
+								mixin specs("Square Feet", "2,154")
+								mixin specs("Lot Size", "")
+								mixin specs("Price", "$1,588,000")
+								mixin specs("Price/SqFt", "")
+						//- .col-xs-offset-2.col-xs-8.col-sm-offset-0.col-sm-3
+						.col-xs-12.col-sm-offset-1.col-sm-3
+							ul.list-unstyled
+								mixin specs("Garage Size", "")
+								mixin specs("Property Type", "House")
+								mixin specs("Year Built", "")
+								mixin specs("Taxes", "")
+								mixin specs("MLS #", "")
+								mixin specs("External Link", "")
+								mixin specs("View on Zillow", "")
+								mixin specs("View on Trulia", "")
+
 		include ../../../includes/alt-contact
 		include ../../../includes/footer
 		include ../../../includes/scripts
+
+
+		//- table
+		//- 	tr
+		//- 		th Beds
+		//- 		td 3
+		//- 		th Garage Size
+		//- 		td
+		//- 	tr
+		//- 		th Baths
+		//- 		td 3
+		//- 		th Property Type
+		//- 		td House
+		//- 	tr
+		//- 		th Square Feet
+		//- 		td 2,154
+		//- 		th Year Built
+		//- 		td
+		//- 	tr
+		//- 		th Lot Size
+		//- 		td
+		//- 		th Taxes
+		//- 		td
+		//- 	tr
+		//- 		th Price
+		//- 		td $1,588,000
+		//- 		th MLS #
+		//- 		td
+		//- 	tr
+		//- 		th Price/SqFt
+		//- 		td 
+		//- 		th External Link
+		//- 		td 
+		//- 	tr
+		//- 		th View on Zillow
+		//- 		td
+		//- 	tr
+		//- 		th View on Trulia
+		//- 		td 
