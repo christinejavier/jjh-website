@@ -2,11 +2,11 @@
 
 ## Tools used:
 - Gulp: 
-⋅⋅* concatenate and minify scripts
-⋅⋅* pre-process, concatenate and minify CSS and add sourcemaps
-⋅⋅* pre-process HTML
-⋅⋅* optimize images
-⋅⋅* Browsersync
+	- concatenate and minify scripts
+	- pre-process, concatenate and minify CSS and add sourcemaps
+	- pre-process HTML
+	- optimize images
+	- Browsersync
 - Sass (.sass)
 - Jade Templating
 
