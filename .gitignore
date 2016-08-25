@@ -1,13 +1,2 @@
-# build files
 build/
-
 node_modules/
-package.json/
-src/images/
-package.json
-src/css/boot*.css
-src/css/boot*.css.map
-src/css/jquery*.css
-src/js/boot*.js
-src/js/jquery*.js
-src/*.png
