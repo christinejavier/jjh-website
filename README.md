@@ -4,7 +4,7 @@
 - Gulp: 
 	- concatenate and minify scripts
 	- pre-process, concatenate and minify CSS and add sourcemaps
-	- pre-process HTML
+	- compile Jade to generate HTML
 	- optimize images
 	- Browsersync
 - Sass (.sass)
