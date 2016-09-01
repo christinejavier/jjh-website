@@ -1,6 +1,10 @@
 var gulp = require("gulp"),
 	jade = require("gulp-jade"),
 	plumber = require("gulp-plumber"),
+	data = require("gulp-data"),
+	swig = require("gulp-swig"),
+	path = require("path"),
+	fs = require("fs"),
 	browserSync = require("browser-sync"),
 	replace = require("gulp-replace");
 
