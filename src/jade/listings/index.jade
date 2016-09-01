@@ -11,12 +11,12 @@ html(lang='en')
 		include ../../includes/navbar
 		main
 			.container-fluid
-				h1.text-center Current Listings
+				h1.text-center.end-head Current Listings
 				ul.gallery.text-center.list-unstyled
 					include ../../includes/newest
 					li
 						a(href="#")
-							img.img-responsive.center-block(src="/images/house.jpg", alt="")
+							img.img-responsive.center-block(src="/images/house.jpg", alt="Link to home")
 							span.text-content
 								span
 									p Eastvale House for Rent $2800
@@ -24,12 +24,16 @@ html(lang='en')
 									p 4 Beds | 4.00 Baths | 4039 SqFt | $2,800.00
 					li
 						a(href="#")
-							img.img-responsive.center-block(src="/images/house.jpg", alt="")
+							img.img-responsive.center-block(src="/images/house.jpg", alt="Link to home")
 							span.text-content
 								span
 									p Eastvale House for Rent $2800
 									p 14975 Franklin Ln Eastvale, CA 92880
 									p 4 Beds | 4.00 Baths | 4039 SqFt | $2,800.00
+		#lazyjson
+			#template-lazyjson
+				p ID: {{title}}
+
 		include ../../includes/alt-contact
 		include ../../includes/footer
 		include ../../includes/scripts

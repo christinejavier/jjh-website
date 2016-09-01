@@ -12,7 +12,10 @@
   },
   "author": "Michelle Huang",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  },
   "devDependencies": {
     "browser-sync": "^2.14.0",
     "del": "^2.2.1",
@@ -21,6 +24,7 @@
     "gulp-cache": "^0.4.5",
     "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
     "gulp-if": "^2.0.1",
     "gulp-imagemin": "^3.0.1",
     "gulp-jade": "^1.1.0",
@@ -30,6 +34,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-swig": "^0.8.0",
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "gulp-webserver": "^0.9.1",
