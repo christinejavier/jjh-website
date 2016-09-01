@@ -15,9 +15,9 @@ gulp.task("jade", function() {
 	console.log("starting jade task");
 	return gulp.src(JADE_PATH)
 		// this doesn't work https://www.npmjs.com/package/gulp-data
-		.pipe(data(function(file){
-			return require("src/jade/api/" + path.basename(file.path, "listings.jade") + ".json");
-		}))
+		// .pipe(data(function(file){
+		// 	return require("src/jade/api/" + path.basename(file.path, "listings.jade") + ".json");
+		// }))
 
 		//doesn't work
 		// .pipe(data(function(){
