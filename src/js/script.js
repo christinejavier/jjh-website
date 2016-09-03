@@ -1,5 +1,11 @@
-$( 'div#lazyjson' ).lazyjson({
+$("#lazyjson").lazyjson({
+    effect: "slideDown",
+    pagination: {
+    	active: true,
+    	pages: 1,
+    	count: 10
+    },
     api: {
-        uri: "/api/listings.jade.json"
+        uri: "/api/listings.json"
     }
 });
