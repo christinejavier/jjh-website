@@ -30,7 +30,6 @@ gulp.task("jade", function() {
 		//     	fs.readFileSync('./src/jade/api/listings.jade.json')
 		// 	);
 		// }))
-		
 		.pipe(plumber(function(err){
 			console.log("styles task error");
 			console.log(err);
