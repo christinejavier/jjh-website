@@ -10,4 +10,5 @@
 - Sass (.sass)
 - Jade Templating
 
+Run `npm install` to install packages.
 Run `gulp` or other tasks to build `build/` folder.
