@@ -9,7 +9,7 @@ var gulp = require("gulp"),
 	replace = require("gulp-replace");
 
 //file paths
-var JADE_PATH = "src/jade/**/*.jade";
+var JADE_PATH = "./src/jade/**/*.jade";
 
 gulp.task("jade", function() {
 	console.log("starting jade task");
@@ -35,7 +35,11 @@ gulp.task("jade", function() {
 			console.log(err);
 			this.emit("end");
 		}))
-		.pipe(jade())
+
+		.pipe(jade({
+			// for dev
+			pretty: true}
+		))
 		.pipe(gulp.dest("build"))
 		.pipe(browserSync.reload({
 			stream: true
