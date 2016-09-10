@@ -2,6 +2,7 @@ var gulp = require("gulp"),
 	plumber = require("gulp-plumber"),
 	data = require("gulp-data"),
 	swig = require("gulp-swig"),
+	jsonmin = require("gulp-jsonminify"),
 	browserSync = require("browser-sync"),
 	replace = require("gulp-replace");
 
@@ -15,6 +16,7 @@ gulp.task("api", function() {
 			console.log(err);
 			this.emit("end");
 		}))
+		.pipe(jsonmin())
 		// .pipe(swig())
 		.pipe(gulp.dest("build/api"))
 		.pipe(browserSync.reload({
