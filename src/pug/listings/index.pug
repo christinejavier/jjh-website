@@ -1,0 +1,60 @@
+doctype html
+html(lang='en')
+	title Current Listings | John Huang - Southern California Real Estate Agent
+	meta(name="description", content="View all of John Huang's listings for Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, and more.")
+	meta(property="og:title", content="Current Listings | John Huang - Southern California Real Estate Agent")
+	meta(property="og:description", content="View all of John Huang's listings for Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, and more.")
+	meta(property="og:url", content="#")
+	meta(property="og:image", content="#")
+	include ../../includes/head
+	body.listings-page
+		include ../../includes/navbar
+		main
+			.container-fluid
+				.row
+					.col-xs-12.col-sm-offset-1.col-sm-10
+						h1.text-center.end-head Current Listings
+						div#lazyjson
+							div#template-lazyjson.listing
+								.row
+									.col-xs-12.col-sm-5
+										.contain
+											a(href="{{listingLocation}}", data-id="{{id}}")
+												img.img-responsive.center-block(src="{{imageLocation}}", alt="Link to {{address1}} Real Estate")
+									.col-xs-12.col-sm-7
+										a(href="{{listingLocation}}", data-id="{{id}}")
+											h2 {{address1}}
+											h3.sm-bot-pad {{address2}}
+										p {{price}}
+										p {{bed}} Beds | {{bath}} Baths | {{sqft}} SqFt
+										p {{shortDescription}}
+										a(href="{{listingLocation}}", data-id="{{id}}").link-to-prop Property Details 
+											i.fa.fa-angle-right(aria-hidden="true")
+						.row
+							.col-xs-12.text-center
+								a(href="#").btn.btn-primary.previous Previous
+								a(href="#").btn.btn-primary.next Next
+		
+		include ../../includes/alt-contact
+		include ../../includes/footer
+		include ../../includes/scripts
+
+
+				//- ul.gallery.text-center.list-unstyled
+				//- 	include ../../includes/newest
+				//- 	li
+				//- 		a(href="#")
+				//- 			img.img-responsive.center-block(src="/images/house.jpg", alt="Link to home")
+				//- 			span.text-content
+				//- 				span
+				//- 					p Eastvale House for Rent $2800
+				//- 					p 14975 Franklin Ln Eastvale, CA 92880
+				//- 					p 4 Beds | 4.00 Baths | 4039 SqFt | $2,800.00
+				//- 	li
+				//- 		a(href="#")
+				//- 			img.img-responsive.center-block(src="/images/house.jpg", alt="Link to home")
+				//- 			span.text-content
+				//- 				span
+				//- 					p Eastvale House for Rent $2800
+				//- 					p 14975 Franklin Ln Eastvale, CA 92880
+				//- 					p 4 Beds | 4.00 Baths | 4039 SqFt | $2,800.00

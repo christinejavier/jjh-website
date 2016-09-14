@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+	title Contact | John Huang - Southern California Real Estate Agent
+	meta(name="description", content="Contact me to discuss selling or buying your next home.")
+	meta(property="og:title", content="Contact | John Huang - Southern California Real Estate Agent")
+	meta(property="og:description", content="Contact me to discuss selling or buying your next home.")
+	meta(property="og:url", content="#")
+	meta(property="og:image", content="#")
+	include ../../includes/head
+	body.contact-page
+		include ../../includes/navbar
+		main
+			.container-fluid
+				h1.text-center.end-head Contact
+				.row
+					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-5
+						p If you would like to talk about a property or have a question, feel free to get in touch. Fill out the contact form and we’ll get right back to you.
+						p Whether you’re looking to buy, sell, or would like more information about the area, please contact me.
+						p 
+							| 1260 Corona Pointe, STE. 102,
+							br
+							| Corona, CA 92879
+						
+						p 
+							| Phone: 
+							a(href="tel:16266296699") (626)-629-6699
+							br
+							| Email: 
+							a(href="mailto:john4reo@gmail.com") john4reo@gmail.com
+					form#contact-form(action="https://formspree.io/john4reo@gmail.com", method="POST")
+						//- add site url to value when publish
+						input(type="hidden", name="_next", id="name", value="#")
+					.col-xs-12.col-sm-offset-1.col-sm-10.col-md-offset-0.col-md-5
+						.field
+							input#name(type="text", name="name", placeholder="Name*" required)
+						.field
+							input#email(type="email", name="_replyto", placeholder="Email*" required)
+						.field
+							input#subject(type="subject", name="_subject", placeholder="Subject")
+						.field
+							textarea#message(name="message", placeholder="Your Message*" required)
+						.field
+							button(type="submit") Send
+		include ../../includes/footer
+		include ../../includes/scripts
