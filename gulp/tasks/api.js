@@ -7,7 +7,7 @@ var gulp = require("gulp"),
 	replace = require("gulp-replace");
 
 //file paths
-var API_PATH = "src/jade/api/*.json";
+var API_PATH = "src/pug/api/*.json";
 
 gulp.task("api", function() {
 	return gulp.src(API_PATH)
