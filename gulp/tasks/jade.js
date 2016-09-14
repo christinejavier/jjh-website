@@ -6,11 +6,48 @@ var gulp = require("gulp"),
 	path = require("path"),
 	fs = require("fs"),
 	browserSync = require("browser-sync"),
-	replace = require("gulp-replace");
+	replace = require("gulp-replace"),
+	pug = require("gulp-pug");
 
 //file paths
 var JADE_PATH = "./src/jade/**/*.jade";
+var PUG_PATH = "./src/jade/**/*.pug";
 
+gulp.task("pug", function() {
+	return gulp.src(PUG_PATH)
+		.pipe(plumber(function(err){
+			console.log("styles task error");
+			console.log(err);
+			this.emit("end");
+		}))
+		.pipe(pug({
+			// for dev
+			pretty: true}
+		))
+		.pipe(gulp.dest("build"))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
+});
+
+//for production
+gulp.task("pug:prod", function() {
+	return gulp.src(PUG_PATH)
+		.pipe(plumber(function(err){
+			console.log("styles task error");
+			console.log(err);
+			this.emit("end");
+		}))
+		.pipe(pug())
+		//replace ="/ with ="http://...
+		//.pipe(replace(/="\//g, '="http://michellehuang.net/'))
+		.pipe(gulp.dest("build"))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
+});
+
+/* OLD JADE TASK
 gulp.task("jade", function() {
 	console.log("starting jade task");
 	return gulp.src(JADE_PATH)
@@ -63,3 +100,4 @@ gulp.task("jade:prod", function() {
 			stream: true
 		}));
 });
+*/
