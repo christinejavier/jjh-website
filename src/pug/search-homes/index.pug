@@ -6,15 +6,15 @@ html(lang='en')
 	meta(property="og:description", content="Find your next home in the MLS listings.")
 	meta(property="og:url", content="#")
 	meta(property="og:image", content="#")
-	include ../../includes/head
+	include ../../includes/head.pug
 	body.search-page
-		include ../../includes/navbar
+		include ../../includes/navbar.pug
 		main.search-homes
 			.container-fluid.text-center
 				h1 Search Homes
 				.row
 					.col-xs-12.col-md-offset-1.col-md-10
 						iframe(src="http://mrmlsmatrix.com/Matrix/public/IDX.aspx?idx=e0431445", width="100%", height="600px", frameborder="0", marginwidth="0", marginheight="0")
-		include ../../includes/alt-contact
-		include ../../includes/footer
-		include ../../includes/scripts
+		include ../../includes/alt-contact.pug
+		include ../../includes/footer.pug
+		include ../../includes/scripts.pug

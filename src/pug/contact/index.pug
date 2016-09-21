@@ -6,9 +6,9 @@ html(lang='en')
 	meta(property="og:description", content="Contact me to discuss selling or buying your next home.")
 	meta(property="og:url", content="#")
 	meta(property="og:image", content="#")
-	include ../../includes/head
+	include ../../includes/head.pug
 	body.contact-page
-		include ../../includes/navbar
+		include ../../includes/navbar.pug
 		main
 			.container-fluid
 				h1.text-center.end-head Contact
@@ -41,5 +41,5 @@ html(lang='en')
 							textarea#message(name="message", placeholder="Your Message*" required)
 						.field
 							button(type="submit") Send
-		include ../../includes/footer
-		include ../../includes/scripts
+		include ../../includes/footer.pug
+		include ../../includes/scripts.pug

@@ -6,9 +6,9 @@ html(lang="en")
 	meta(property="og:description", content="Find your perfect home with John Huang in Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, and the rest of San Gabriel Valley.")
 	meta(property="og:url", content="#")
 	meta(property="og:image", content="#")
-	include ../includes/head
+	include ../includes/head.pug
 	body.home-page
-		include ../includes/navbar
+		include ../includes/navbar.pug
 		header
 			.container-fluid.text-center
 				.row
@@ -28,7 +28,7 @@ html(lang="en")
 			.container-fluid
 				h2.text-center Current Listings
 				ul.gallery.text-center.list-unstyled
-					include ../includes/newest
+					include ../includes/newest.pug
 				.row
 					.col-xs-12.text-center
 						a(href="/listings").btn.btn-primary View More Listings
@@ -76,8 +76,8 @@ html(lang="en")
 					.col-xs-12
 						a(href="tel:6266296699").btn.btn-primary (626)-629-6699
 						a(href="/contact").btn.btn-primary Email Me
-		include ../includes/footer
-		include ../includes/scripts
+		include ../includes/footer.pug
+		include ../includes/scripts.pug
 
 
 

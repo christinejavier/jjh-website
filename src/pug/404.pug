@@ -4,9 +4,9 @@ html(lang="en")
 	meta(name="description", content="Find your perfect home with John Huang in Eastvale, Corona, Arcadia, Temple City, San Marino, Pasadena, and the rest of San Gabriel Valley.")
 	meta(property="og:title", content="Page Not Found | John Huang - Southern California Real Estate Agent")
 	meta(property="og:image", content="#")
-	include ../includes/head
+	include ../includes/head.pug
 	body.pnf-page
-		include ../includes/navbar
+		include ../includes/navbar.pug
 		main
 			.container-fluid.text-center
 				.row
@@ -25,6 +25,6 @@ html(lang="en")
 							| If you think this is an error, please 
 							a(href="/contact") let us know 
 							| so we can fix it.
-		include ../includes/alt-contact
-		include ../includes/footer
-		include ../includes/scripts
+		include ../includes/alt-contact.pug
+		include ../includes/footer.pug
+		include ../includes/scripts.pug
